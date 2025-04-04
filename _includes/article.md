@@ -7,7 +7,7 @@ It is interesting to consider, then, why for many years we have referred to ours
 What does seem to have changed are the *toolkit* and *methods* we're now required to adopt, in order to successfully observe everything we know and generate practical value from it. 
 
 Nowadays, it’s commonplace for firms to regard data as a first-class citizen and the backbone of well-calculated business decisions. We're deploying increasingly sophisticated computing resources just to make sense of large (and growing) information streams. 
-Data professionals are accustomed to working at scale, to the point where the term <span style="font-weight: 310;">Big Data</span> is not necessarily a meaningful term that distinguishes the architecture of one company from another.
+Data professionals are accustomed to working at scale, to the point where the term <span style="font-weight: 310;">Big Data</span> is not necessarily meaningful to distinguish the architecture of one company from another.
 
 So why, then, is the term still mainstream, and why was <span style="font-weight: 310;">Big Data</span> ever relevant in the first place?  
 
