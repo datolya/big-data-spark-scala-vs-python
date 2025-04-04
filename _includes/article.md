@@ -36,7 +36,7 @@ This is undoubtedly an impressive feat, but it also raises two further questions
 The solution is straightforward, and there’s nothing particularly new here: we can pool multiple servers and harness their collective power. This is plain-old distributed computing. By allowing multiple physical computers (nodes) to work together in a cluster, we trust that they can solve our Big Problem.
 
 Big Data, then, could be seen as any Analytics workflow repeatedly presenting us with problems, which we can only conceivably solve when pooling computing resources this way.
-It is no surprise that to do this efficiently, we need to look for specialized tools in our artillery. It’s no trivial task to carry instructions over synchronous, yet otherwise disjointed, machines, instructing them to safely access and manipulate our data. This brings us to the hype around <span style="font-weight: 310;">Apache Spark</span>.
+It is no surprise that to do this efficiently, we need to look for specialized tools in our artillery. It’s no trivial task to carry instructions over synchronous, yet otherwise disjointed, machines, telling them to safely access and manipulate our data. This brings us to the hype around <span style="font-weight: 310;">Apache Spark</span>.
 
 ## Why Spark is Industry Leading
 
