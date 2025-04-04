@@ -1,23 +1,23 @@
 📊 April 4th, 2025 
 📝 authored by Sebestyén Gergely 
 
-It is not an inherently modern skill to process all available information and come up with a reasonable plan of action on its basis. 
+It is not really a *modern* skill, to process all available information and come up with a reasonable plan of action. 
 
-It is interesting to consider, then, why for many years we have referred to ourselves as living in an *information economy*, and why data professionals are sought after in almost every conceivable business domain. 
-What does seem to have changed are the *toolkit* and *methods* we're now required to adopt, in order to successfully observe everything we know and generate practical value from it. 
+It is interesting to consider, then, why we're referring to ourselves as living in an *information economy*, and why data professionals are sought after in almost every conceivable business domain. 
+What seems to have changed are the *toolkit* and *methods* we're now required to adopt, in order to successfully observe everything we know and generate practical value from it. 
 
-Nowadays, it’s commonplace for firms to regard data as a first-class citizen and the backbone of well-calculated business decisions. We're deploying increasingly sophisticated computing resources just to make sense of large (and growing) information streams. 
+Nowadays, it’s commonplace that firms regard data as a first-class citizen and the backbone of well-calculated business decisions. We're deploying increasingly sophisticated computing resources just to make sense of large (and growing) information streams. 
 Data professionals are accustomed to working at scale, to the point where the term <span style="font-weight: 310;">Big Data</span> is not necessarily meaningful to distinguish the architecture of one company from another.
 
 So why, then, is the term still mainstream, and why was <span style="font-weight: 310;">Big Data</span> ever relevant in the first place?  
 
 ## Beyond a Buzzword: What Is Big Data?
 
-Let's try to understand this in layman terms. It’s generally easier to work with something once we’ve mapped out its origins, present state, and future direction.  
+Let's try to understand this in layman terms. We want to map out the origins, present state, and future direction of 'data at scale'.  
 
 Computers, of course, are key to solving this puzzle. 
 We know that the real-time processing power of a single computer is limited - let's measure this by short-term memory capacity. 
-This is true for everything from an ordinary laptop to a *bare metal* server we could rent from one of the cloud provider giants.
+This is true for everything from an ordinary laptop to a *bare metal* server we could rent from one of the cloud provider tech giants.
 This is also something we can quantify:
 
 <span style="font-weight: 310; padding-bottom: 20px;"> The RAM capacity of the average notebook typically falls between 8-16GB.</span>
