@@ -11,3 +11,13 @@ description: " "
     {% endcapture %}
     {{ article_content | markdownify }}
 </article>
+
+<footer class="custom-footer" style="margin-top: 50px; text-align: center;">
+  <p><span style="font-weight: 310;">Copyright © 2025 Sebestyén Gergely</span></p>
+</footer>
+
+<style>
+  footer:not(.custom-footer) {
+    display: none;
+  }
+</style>
