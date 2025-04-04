@@ -116,7 +116,7 @@ Does science come to the rescue? An academic paper by [Ji & Kwon (2020)](https:/
 Another paper by [Gupta & Kumari (2020)](https://ieeexplore.ieee.org/abstract/document/9452955) is, in fact, a step more cautious. 
 
 To settle the debate for ourselves and form a conclusive opinion, we’re left with reading an entire book on Apache Spark Optimizations by [Karau & Warren (2017)](https://books.google.it/books?id=90glDwAAQBAJ&lpg=PP1&ots=FB7LR1Tjqg&dq=spark%20scala%20pySpark&lr&pg=PP1#v=onepage&q=spark%20scala%20pySpark&f=false). Alternatively, we can pick neatly organized bullet points from short articles on the subject — 
-two of which are by [Intel](https://granulate.io/blog/pySpark-vs-spark-7-key-differences-how-to-choose/#Performance) and [MungingData](https://www.mungingdata.com/apache-spark/python-pySpark-scala-which-better/#performance-comparison). 
+two of which are by [Intel](https://granulate.io/blog/pySpark-vs-spark-7-key-differences-how-to-choose/#Performance) and [MungingData](https://www.mungingdata.com/apache-spark/python-pyspark-scala-which-better/#performance-comparison). 
 
 <span style="font-weight: 310;"> pySpark vs. Scala</span>
 
