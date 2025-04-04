@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Why Your Big Data Architecture is Flawed
-description: authored by Sebestyen Gergely
+description: " "
 ---
 
 {% include home_link.html %}
-<article style="background-color: #FBFBF7; padding: 20px; border-radius: 8px; color: #333; line-height: 1.6;">
-
-    <p>In progress ...</p>
-
-    <p>This is where the article will go. </p>
+<article style="background-color: #FBFBF7; padding: 20px; border-radius: 8px; color: #333; line-height: 1.6; text-align: justify; text-align-last: left; hyphens: none; word-break: keep-all; overflow-wrap: normal;">
+    {% capture article_content %}
+        {% include article.md %}
+    {% endcapture %}
+    {{ article_content | markdownify }}
 </article>
