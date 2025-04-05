@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/assets/css/style.css?v=e071bf768983b6e0e530d673324ebed65b49cfe9">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4ad5573c7e9f85b09102d924975064917975de8b">
     <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -115,22 +115,22 @@ We know that the real-time processing power of a single computer is limited - le
 This is true for everything from an ordinary laptop to a <em>bare metal</em> server we could rent from one of the cloud provider tech giants.
 This is also something we can quantify:</p>
 
-<p><span style="font-weight: 310; padding-bottom: 20px;"> The RAM capacity of the average notebook typically falls between 8-16GB.</span></p>
+<p><span style="font-weight: 400; padding-bottom: 20px;"> The RAM capacity of the average notebook typically falls between 8-16GB.</span></p>
 
 <p>As common sense also dictates, it would be inefficient to use such personal hardware for severely data-intensive tasks. What if we stick to a single hardware, but add some power to it?</p>
 
-<p><span style="font-weight: 310; padding-bottom: 20px;">The Macbook Pro with the <a href="https://support.apple.com/en-us/121553">Media Engine</a> has a maximum bandwidth of 546GB.</span></p>
+<p><span style="font-weight: 400; padding-bottom: 20px;">The Macbook Pro with the <a href="https://support.apple.com/en-us/121553">Media Engine</a> has a maximum bandwidth of 546GB.</span></p>
 
 <p>This is an M4 Max chip specifically designed to boost memory performance. We’re still well below Terrabyte scale. Google’s data warehouse solution would consume this much data for about 2-3$. What if instead, we rented a single piece of hardware from them?</p>
 
-<p><span style="font-weight: 310; padding-bottom: 20px;">The most powerful Google Compute Engine, specifically memory-optimized, is the <a href="https://cloud.google.com/compute/docs/memory-optimized-machines">X4 machine series</a> with up to 32 TB of capacity.</span></p>
+<p><span style="font-weight: 400; padding-bottom: 20px;">The most powerful Google Compute Engine, specifically memory-optimized, is the <a href="https://cloud.google.com/compute/docs/memory-optimized-machines">X4 machine series</a> with up to 32 TB of capacity.</span></p>
 
 <p>This is undoubtedly an impressive feat, but it also raises two further questions: Is it practical (and affordable)? What if we produce petabytes of data but don’t have access to a supercomputer to upgrade to?</p>
 
 <p>The solution is straightforward, and there’s nothing particularly new here: we can pool multiple servers and harness their collective power. This is plain-old distributed computing. By allowing multiple physical computers (nodes) to work together in a cluster, we trust that they can solve our Big Problem.</p>
 
 <p>Big Data, then, could be seen as any Analytics workflow repeatedly presenting us with problems, which we can only conceivably solve when pooling computing resources this way.
-It is no surprise that to do this efficiently, we need to look for specialized tools in our artillery. It’s no trivial task to carry instructions over synchronous, yet otherwise disjointed, machines, telling them to safely access and manipulate our data. This brings us to the hype around <span style="font-weight: 310;">Apache Spark</span>.</p>
+It is no surprise that to do this efficiently, we need to look for specialized tools in our artillery. It’s no trivial task to carry instructions over synchronous, yet otherwise disjointed, machines, telling them to safely access and manipulate our data. This brings us to the hype around <span style="font-weight: 400;">Apache Spark</span>.</p>
 
 <h2 id="why-spark-is-industry-leading">Why Spark is Industry Leading</h2>
 
@@ -142,7 +142,7 @@ Today, it is the most widely adopted open-source tool to work with data split ac
 Whereas Spark processes data in memory, Hadoop consumes it in batches and works with external storage, leading to a significant performance overhead. 
 On top of that, Spark has demonstrated versatility for other data domains, such as its powerful real-time <a href="https://spark.apache.org/docs/latest/streaming-programming-guide.html">streaming engine</a>. In terms of solving problems — both many and efficiently — Spark truly shines.</p>
 
-<p><span style="font-weight: 310; padding-bottom: 20px;">How about the private domain?</span></p>
+<p><span style="font-weight: 400; padding-bottom: 20px;">How about the private domain?</span></p>
 
 <p>Proprietary solutions are available, of course. Google’s hosted data warehouse, BigQuery works under the hood exploiting the <a href="https://cloud.google.com/blog/products/data-analytics/new-blog-series-bigquery-explained-overview">Dremel</a> query engine, well suited for distributed systems. Other hosted environments such as Snowflake will have a similar <a href="https://0x0fff.com/snowflake-the-good-the-bad-and-the-ugly/">proprietary alternative</a> that does the work for them behind the scenes.
 Spark itself is often deployed in hosted environments for easier setup and performance tuning.
@@ -157,29 +157,29 @@ All of these provide users with flexibility to fine-tune data processes based on
 <p>Let’s take advantage of the fact that Spark is <em>not</em> one of such black boxes, and have a look inside.
 Scala was the original language choice of the developers. Why does this matter? Let’s try to understand the rationale behind that decision.</p>
 
-<p>✅ First, Scala leverages the <span style="font-weight: 310;">power of the Java Virtual Machine (JVM)</span>, which is famed for its efficient, safe memory usage and optimized performance. So far, so good.</p>
+<p>✅ First, Scala leverages the <span style="font-weight: 400;">power of the Java Virtual Machine (JVM)</span>, which is famed for its efficient, safe memory usage and optimized performance. So far, so good.</p>
 
-<p>✅ Second, Scala is a <span style="font-weight: 310;">type-safe language</span>. The program knows what to expect from each computing component, and safe execution is guaranteed.</p>
+<p>✅ Second, Scala is a <span style="font-weight: 400;">type-safe language</span>. The program knows what to expect from each computing component, and safe execution is guaranteed.</p>
 
 <p>If we were to stop here, there would be no shortage of alternatives: Java would equally qualify for the job. Why use Scala then, instead of its prevalent cousin? As a side note, Scala comes with great syntactic sugar, which spares us some development pain that Java won’t address as kindly (Scala 3 is even braceless!). 
 Assuming it’s not syntax but <em>functionality</em> to have justified the choice, Scala likely won the race for the following reasons:</p>
 
-<p>✅ <span style="font-weight: 310;">Scala has lazy evaluation</span>. Computational resources are only deployed when they are first needed, making it a natural fit for Spark, where heavy reliance on efficient memory management is key.</p>
+<p>✅ <span style="font-weight: 400;">Scala has lazy evaluation</span>. Computational resources are only deployed when they are first needed, making it a natural fit for Spark, where heavy reliance on efficient memory management is key.</p>
 
-<p>✅ Scala has <span style="font-weight: 310;">strong native support for functional programming</span>, which is naturally suited to a distributed setting. Common data operations like map, reduce, and filter are fundamental building blocks for Scala developers, making it an excellent choice for Big Data applications.</p>
+<p>✅ Scala has <span style="font-weight: 400;">strong native support for functional programming</span>, which is naturally suited to a distributed setting. Common data operations like map, reduce, and filter are fundamental building blocks for Scala developers, making it an excellent choice for Big Data applications.</p>
 
 <h2 id="why-should-we-care-about-this">Why Should We Care About This</h2>
 
-<p><span style="font-weight: 310;">Python drastically lowers the entry barrier to using code to solve problems</span>.</p>
+<p><span style="font-weight: 400;">Python drastically lowers the entry barrier to using code to solve problems</span>.</p>
 
 <p>This is especially true for analytics-related scripting, such as running a notebook to analyze an A/B test. The verdict is much the same for lower-level data engineering, too.
 Companies, especially in tech, have increasingly come to realize this.
 It is a sound business strategy to attract top talent from the statistical-data realm then train them to work with a Python ecosystem, which doesn’t strictly require a Computer Science background.</p>
 
-<p><span style="font-weight: 310;">Is this true for Big Data?</span></p>
+<p><span style="font-weight: 400;">Is this true for Big Data?</span></p>
 
 <p>With a Spark implementation in Python, analysts can write code autonomously in a language they are already familiar with, and start shuffling data on demand. 
-This implementation, commonly seen in the industry, is <span style="font-weight: 310;">pySpark</span>. It serves as the wrapper layer between Python and the Spark API.</p>
+This implementation, commonly seen in the industry, is <span style="font-weight: 400;">pySpark</span>. It serves as the wrapper layer between Python and the Spark API.</p>
 
 <p>It’s worth pausing here for a moment, though. Didn’t we just argue that Scala was the optimal language choice for developing this technology in the first place? 
 Python is typed dynamically (rather than statically), it’s interpreted (rather than compiled), and its capacity for distributed computing is significantly reduced by something called the Global Interpreter Lock (GIL), which restricts execution to a single thread at a time. (For those outside the loop and curious about going down a rabbit hole, the GIL can be experimentally removed <a href="https://docs.python.org/3/whatsnew/3.13.html">Python 3.13 and upwards</a>. However, it is not yet close to becoming a stable feature of the language).</p>
@@ -188,7 +188,7 @@ Python is typed dynamically (rather than statically), it’s interpreted (rather
 Sure enough, pandas or NumPy may work well on isolated machines, but they won’t function at all in a parallel environment.
 Efficient memory management is not why Python is taking over the world, either — yet this is exactly what we need for Big Data processing.</p>
 
-<p><span style="font-weight: 310;">So, how is pySpark not only a legitimate, but vital industry tool?</span></p>
+<p><span style="font-weight: 400;">So, how is pySpark not only a legitimate, but vital industry tool?</span></p>
 
 <p>Beneath the service, the library works through a bridge (Py4J) and communicates directly with the JVM-based Spark core. 
 It bypasses the standard Python execution model and attempts to move on to more familiar grounds as fast and simply as possible. 
@@ -198,7 +198,7 @@ Problems start to occur when we run certain operations that force pure Python ob
 
 <h2 id="performance-performance-performance">Performance, Performance, Performance</h2>
 
-<p><span style="font-weight: 310;">Where do we stand in the industry, then?</span></p>
+<p><span style="font-weight: 400;">Where do we stand in the industry, then?</span></p>
 
 <p>Anecdotal evidence suggests that Scala execution can be up to 10x faster than Python. 
 This might be true when we consider isolated code snippets in each language, but it isn’t a meaningful statement for our problem.
@@ -210,27 +210,27 @@ Another paper by <a href="https://ieeexplore.ieee.org/abstract/document/9452955"
 <p>To settle the debate for ourselves and form a conclusive opinion, we’re left with reading an entire book on Apache Spark Optimizations by <a href="https://books.google.it/books?id=90glDwAAQBAJ&amp;lpg=PP1&amp;ots=FB7LR1Tjqg&amp;dq=spark%20scala%20pySpark&amp;lr&amp;pg=PP1#v=onepage&amp;q=spark%20scala%20pySpark&amp;f=false">Karau &amp; Warren (2017)</a>. Alternatively, we can pick neatly organized bullet points from short articles on the subject — 
 two of which are by <a href="https://granulate.io/blog/pySpark-vs-spark-7-key-differences-how-to-choose/#Performance">Intel</a> and <a href="https://www.mungingdata.com/apache-spark/python-pyspark-scala-which-better/#performance-comparison">MungingData</a>.</p>
 
-<p><span style="font-weight: 310;"> pySpark vs. Scala</span></p>
+<p><span style="font-weight: 400;"> pySpark vs. Scala</span></p>
 
 <p>The consensus appears to be this. When used for simple tasks or when used wisely for complex tasks, pySpark gives us the ability to harness the full power of Spark. This is achieved at minimal or no additional cost and with the added benefit of Python’s easy-to-use programming modules.
 However, unlike in Scala or other JVM-based languages, pySpark developers are prone to introducing unintentional performance bottlenecks if they don’t carefully consider how Spark code will be executed behind the scenes, from start to finish.</p>
 
-<p><span style="font-weight: 310;">Finally, we may not be far from third alternatives that will completely reset existing wisdom.</span></p>
+<p><span style="font-weight: 400;">Finally, we may not be far from third alternatives that will completely reset existing wisdom.</span></p>
 
-<p>Databricks have developed the <a href="https://www.databricks.com/product/photon"><span style="font-weight: 310;">Photon engine</span></a>, written entirely in C++. It integrates with Spark without the need for the JVM altogether. This is a pretty strong signal that they’re betting on a significant performance boost and sustained commercial usage.
+<p>Databricks have developed the <a href="https://www.databricks.com/product/photon"><span style="font-weight: 400;">Photon engine</span></a>, written entirely in C++. It integrates with Spark without the need for the JVM altogether. This is a pretty strong signal that they’re betting on a significant performance boost and sustained commercial usage.
 Possibly, then, the company founded by the original authors could write the next chapter in Big Data analytics, too.</p>
 
 <p>Instead of opting for C++, others are placing their bet on the systems programming revolution that Rust might just bring about. A query engine written in Rust,
-<a href="https://news.apache.org/foundation/entry/apache-software-foundation-announces-new-top-level-project-apache-datafusion"><span style="font-weight: 310;">DataFusion</span></a>,
-<span style="font-weight: 310;">was the top-level software project of Apache in 2024</span>.
-It works in tandem with <a href="https://arrow.apache.org/"><span style="font-weight: 310;">Arrow</span></a>, another tool suited to optimize storage and memory usage for analytics applications.
+<a href="https://news.apache.org/foundation/entry/apache-software-foundation-announces-new-top-level-project-apache-datafusion"><span style="font-weight: 400;">DataFusion</span></a>,
+<span style="font-weight: 400;">was the top-level software project of Apache in 2024</span>.
+It works in tandem with <a href="https://arrow.apache.org/"><span style="font-weight: 400;">Arrow</span></a>, another tool suited to optimize storage and memory usage for analytics applications.
 In fact, Apache now possesses an entire suite of Rust-based products (Arrow, Arrow Flight, Flight SQL, DataFusion, Ballista). In one way or another, they all have the potential to influence the Big Data realm. At the very least, it’s another sign that a breakthrough in distributed computing is just around the corner.</p>
 
-<p>Another Rust-written tool, <a href="https://pola.rs/"><span style="font-weight: 310;">Polars</span></a> (or, as one redditor puts it, <em>pandas on steroids</em>), might raise the Big Data threshold — the point at which distributed computing tools become fundamentally necessary.</p>
+<p>Another Rust-written tool, <a href="https://pola.rs/"><span style="font-weight: 400;">Polars</span></a> (or, as one redditor puts it, <em>pandas on steroids</em>), might raise the Big Data threshold — the point at which distributed computing tools become fundamentally necessary.</p>
 
 <h2 id="call-it-a-day">Call It A Day</h2>
 
-<p><span style="font-weight: 310;">Let’s answer the clickbait and understand why your Big Data architecture might be flawed.</span></p>
+<p><span style="font-weight: 400;">Let’s answer the clickbait and understand why your Big Data architecture might be flawed.</span></p>
 
 <p>According to Scala purists, if you’re not using Spark directly in its native environment, trouble is on the horizon. 
 As of April 2025, Scala works most seamlessly with the existing JVM implementation of Spark.</p>
