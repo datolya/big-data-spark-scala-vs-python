@@ -46,7 +46,11 @@ Today, it is the most widely adopted open-source tool to work with data split ac
 In the public domain, Spark has no real credible competition, yet. 
 [Hadoop](https://hadoop.apache.org/) deserves a mention as another Apache framework designed for distributed use cases, but it's slowly becoming a legacy solution. 
 Whereas Spark processes data in memory, Hadoop consumes it in batches and works with external storage, leading to a significant performance overhead. 
-On top of that, Spark has demonstrated versatility for other data domains, such as its powerful real-time [streaming engine](https://spark.apache.org/docs/latest/streaming-programming-guide.html). In terms of solving problems — both many and efficiently — Spark truly shines. 
+On top of that, Spark has demonstrated versatility for other data domains, such as its powerful real-time [streaming engine](https://spark.apache.org/docs/latest/streaming-programming-guide.html). 
+
+For specific domains, we can name legitimate alternatives: we may go with [Flink](https://flink.apache.org/) or [Kafka](https://kafka.apache.org/) for streaming jobs, or pick [Trino (formerly Presto)](https://trino.io/) as a distributed SQL query engine. The list is even longer here. 
+Relative to these technologies, Spark's strength lies with providing a higher-level abstraction and compatibility with multiple other tools, that doesn't limit us just to single use cases. 
+In terms of solving problems — both many and efficiently — Spark truly shines. 
 
 <span style="font-weight: 400; padding-bottom: 20px;">How about the private domain?</span> 
 
