@@ -1,9 +1,9 @@
 📊 April 4th, 2025 
 📝 authored by Sebestyén Gergely 
 
-It is not really a *modern* skill, to process all available information and come up with a reasonable plan of action. 
+It isn't really a *modern* skill, to process all available information and come up with a reasonable plan of action. 
 
-It is interesting to consider, then, what it exactly means that we're living in an information economy, and why data professionals are sought after in almost every conceivable business domain. 
+It's interesting to consider, then, what it exactly means that we're living in an information economy, and why data professionals are sought after in almost every conceivable business domain. 
 What seems to have fundamentally changed is the toolkit we're now required to adopt, in order to successfully observe everything we know and generate practical value from it. 
 
 Nowadays, firms tend to regard data as a first-class citizen and the backbone of well-calculated business decisions. We're relying on increasingly sophisticated computing resources just to make sense of large (and growing) information streams. 
