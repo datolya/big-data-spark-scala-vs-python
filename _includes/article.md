@@ -7,9 +7,9 @@ It is interesting to consider, then, what it exactly means that we're living in 
 What seems to have fundamentally changed is the toolkit we're now required to adopt, in order to successfully observe everything we know and generate practical value from it. 
 
 Nowadays, firms tend to regard data as a first-class citizen and the backbone of well-calculated business decisions. We're relying on increasingly sophisticated computing resources just to make sense of large (and growing) information streams. 
-Data professionals are accustomed to working at scale, to the point where the term <span style="font-weight: 310;">Big Data</span> is not that meaningful to distinguish the architecture of one company from that of another.
+Data professionals are accustomed to working at scale, to the point where the term <span style="font-weight: 400;">Big Data</span> is not that meaningful to distinguish the architecture of one company from that of another.
 
-So why, then, is the term still mainstream? Why was <span style="font-weight: 310;">Big Data</span> ever relevant in the first place?  
+So why, then, is the term still mainstream? Why was <span style="font-weight: 400;">Big Data</span> ever relevant in the first place?  
 
 ## Beyond a Buzzword: What Is Big Data?
 
