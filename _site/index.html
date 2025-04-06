@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/assets/css/style.css?v=12f4a9bee21bd804e68d24a7262076bc71ba3114">
+    <link rel="stylesheet" href="/assets/css/style.css?v=15daec6ee9c58f0187c6f176134d40403885dfa7">
     <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -146,14 +146,12 @@ It is no surprise that to do this efficiently, we need to look for specialized t
 <p>Developed as an open-source project at UC Berkeley in 2009 and donated to the Apache foundation in 2013, Spark was specifically designed for this challenge.
 Today, it is the most widely adopted open-source tool to work with data split across computers (“parallel”). It allows us to access and manipulate our datasets reliably, and recover information even if some individual computers collapse within our network (“fault tolerant”).</p>
 
-<p>In the public domain, Spark has no real credible competition, yet. 
-<a href="https://hadoop.apache.org/">Hadoop</a> deserves a mention as another Apache framework designed for distributed use cases, but it’s slowly becoming a legacy solution. 
-Whereas Spark processes data in memory, Hadoop consumes it in batches and works with external storage, leading to a significant performance overhead. 
-On top of that, Spark has demonstrated versatility for other data domains, such as its powerful real-time <a href="https://spark.apache.org/docs/latest/streaming-programming-guide.html">streaming engine</a>.</p>
+<p>In the public domain, Spark doesn’t face real credible competition, yet. 
+<a href="https://hadoop.apache.org/">Hadoop</a> deserves a mention - it’s another Apache framework designed for a distributed use case, but it’s slowly turning into a legacy solution. 
+Whereas Spark processes data in memory, Hadoop consumes it in batches and works with external storage, leading to a significant performance overhead.</p>
 
-<p>For specific domains, we can name legitimate alternatives: we may go with <a href="https://flink.apache.org/">Flink</a> or <a href="https://kafka.apache.org/">Kafka</a> for streaming jobs, or pick <a href="https://trino.io/">Trino (formerly Presto)</a> as a distributed SQL query engine. The list is even longer here. 
-Relative to these technologies, Spark’s strength lies with providing a higher-level abstraction and compatibility with multiple other tools, that doesn’t limit us just to single use cases. 
-In terms of solving problems — both many and efficiently — Spark truly shines.</p>
+<p>For specific purposes, we can name legitimate alternatives. We may go with <a href="https://flink.apache.org/">Flink</a> or <a href="https://kafka.apache.org/">Kafka</a> to support a real-time, event driven architecture, or pick <a href="https://trino.io/">Trino (formerly Presto)</a> as an SQL query engine from parallel sources. The list is even longer here. 
+Relative to these technologies, Spark’s strength lies in providing a higher-level abstraction that doesn’t limit us to such purpose-built, single use cases. It has demonstrated versatility for ad-hoc SQL queries, batch jobs, as a powerful real-time <a href="https://spark.apache.org/docs/latest/streaming-programming-guide.html">streaming engine</a>, and even machine learning or graph computation. In terms of solving problems — both many and efficiently — Spark truly shines.</p>
 
 <p><span style="font-weight: 400; padding-bottom: 20px;">How about the private domain?</span></p>
 

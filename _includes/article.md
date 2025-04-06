@@ -43,14 +43,12 @@ It is no surprise that to do this efficiently, we need to look for specialized t
 Developed as an open-source project at UC Berkeley in 2009 and donated to the Apache foundation in 2013, Spark was specifically designed for this challenge.
 Today, it is the most widely adopted open-source tool to work with data split across computers ("parallel"). It allows us to access and manipulate our datasets reliably, and recover information even if some individual computers collapse within our network ("fault tolerant").
 
-In the public domain, Spark has no real credible competition, yet. 
-[Hadoop](https://hadoop.apache.org/) deserves a mention as another Apache framework designed for distributed use cases, but it's slowly becoming a legacy solution. 
-Whereas Spark processes data in memory, Hadoop consumes it in batches and works with external storage, leading to a significant performance overhead. 
-On top of that, Spark has demonstrated versatility for other data domains, such as its powerful real-time [streaming engine](https://spark.apache.org/docs/latest/streaming-programming-guide.html). 
+In the public domain, Spark doesn't face real credible competition, yet. 
+[Hadoop](https://hadoop.apache.org/) deserves a mention - it's another Apache framework designed for a distributed use case, but it's slowly turning into a legacy solution. 
+Whereas Spark processes data in memory, Hadoop consumes it in batches and works with external storage, leading to a significant performance overhead.  
 
-For specific domains, we can name legitimate alternatives: we may go with [Flink](https://flink.apache.org/) or [Kafka](https://kafka.apache.org/) for streaming jobs, or pick [Trino (formerly Presto)](https://trino.io/) as a distributed SQL query engine. The list is even longer here. 
-Relative to these technologies, Spark's strength lies with providing a higher-level abstraction and compatibility with multiple other tools, that doesn't limit us just to single use cases. 
-In terms of solving problems — both many and efficiently — Spark truly shines. 
+For specific purposes, we can name legitimate alternatives. We may go with [Flink](https://flink.apache.org/) or [Kafka](https://kafka.apache.org/) to support a real-time, event driven architecture, or pick [Trino (formerly Presto)](https://trino.io/) as an SQL query engine from parallel sources. The list is even longer here. 
+Relative to these technologies, Spark's strength lies in providing a higher-level abstraction that doesn't limit us to such purpose-built, single use cases. It has demonstrated versatility for ad-hoc SQL queries, batch jobs, as a powerful real-time [streaming engine](https://spark.apache.org/docs/latest/streaming-programming-guide.html), and even machine learning or graph computation. In terms of solving problems — both many and efficiently — Spark truly shines.
 
 <span style="font-weight: 400; padding-bottom: 20px;">How about the private domain?</span> 
 
