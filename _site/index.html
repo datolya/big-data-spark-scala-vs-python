@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/assets/css/style.css?v=15daec6ee9c58f0187c6f176134d40403885dfa7">
+    <link rel="stylesheet" href="/assets/css/style.css?v=73dd67fc0cabc9fb1992839d9c52d39fd826b314">
     <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -99,7 +99,8 @@
     }
   }
 </style>
-<article style="background-color: #FBFBF7; padding: 20px; border-radius: 8px; color: #333; line-height: 1.6; text-align: justify; text-align-last: left; hyphens: none; word-break: keep-all; overflow-wrap: normal;">
+
+<article style="background-color: rgb(245, 248, 252); padding: 30px; border-radius: 16px; color: #333333; line-height: 1.6; text-align: justify; text-align-last: left; hyphens: none; word-break: keep-all; overflow-wrap: normal; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); max-width: 900px; margin: 0 auto;">
     
     
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    📊 April 4th, 2025  📝 authored by Sebestyén Gergely 
@@ -265,14 +266,55 @@ To make an already difficult dilemma worse, upcoming new technologies might stea
 </article>
 
 <footer class="custom-footer" style="margin-top: 50px; text-align: center;">
-  <p><span style="font-weight: 310;">Copyright © 2025 Sebestyén Gergely</span></p>
+  <p><span style="font-weight: 310;">Copyright &copy; 2025 Sebestyén Gergely</span></p>
 </footer>
 
 <style>
   footer:not(.custom-footer) {
     display: none;
   }
+
+  /* Same background gradient as main page */
+  body {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(230, 230, 255, 0.8)),
+                url('https://images.unsplash.com/photo-1535909339361-9b77c7b1c77f?auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Proxima Nova", sans-serif;
+  }
+
+  /* Remove default styles on wrapper */
+  .wrapper, .container, #container, #content, main, body > div {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Article style update to match main page */
+  article {
+    background-color: rgb(245, 248, 252);
+    color: #333;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Adjust footer color and styles */
+  footer.custom-footer p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #777;
+  }
+
+  footer.custom-footer p span {
+    font-weight: 310;
+    color: #333;
+  }
 </style>
+
         </section>
 
         <footer>
