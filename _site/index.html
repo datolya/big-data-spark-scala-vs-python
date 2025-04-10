@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/assets/css/style.css?v=73dd67fc0cabc9fb1992839d9c52d39fd826b314">
+    <link rel="stylesheet" href="/assets/css/style.css?v=12686387687bb070e4bca42f4346cca95390e1e1">
     <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -67,38 +67,36 @@
     top: 10px;
     left: 10px;
     z-index: 1000;
-
-    /* Visual Styling */
     display: inline-block;
     background-color: #FBFBF7;
-    color: #333;
-    font-family: sans-serif;
+    color: #000;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
     padding: 8px 16px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #ddd;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   }
 
   .home-link:hover {
-    background-color: #eee; /* Lighter beige on hover */
-    color: #000;          /* Black text on hover */
+    background-color: #eee;
+    color: #000;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (max-width: 768px) {
+    .home-link {
+      top: 10px;
+      right: 10px;
+      left: auto;
+    }
   }
 </style>
 
 <a href="https://datolya.github.io" class="home-link">Home</a>
 
-<style>
-  @media screen and (max-width: 768px) {
-    .home-link {
-      top: 10px;         /* Keeps it at the top */
-      right: 10px;       /* Moves the home button to the right on mobile */
-      left: auto;        /* Removes the left positioning */
-    }
-  }
-</style>
 
 <article style="background-color: rgb(245, 248, 252); padding: 30px; border-radius: 16px; color: #333333; line-height: 1.6; text-align: justify; text-align-last: left; hyphens: none; word-break: keep-all; overflow-wrap: normal; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); max-width: 900px; margin: 0 auto;">
     
@@ -274,7 +272,6 @@ To make an already difficult dilemma worse, upcoming new technologies might stea
     display: none;
   }
 
-  /* Same background gradient as main page */
   body {
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(230, 230, 255, 0.8)),
                 url('https://images.unsplash.com/photo-1535909339361-9b77c7b1c77f?auto=format&fit=crop&w=1950&q=80');
@@ -284,14 +281,12 @@ To make an already difficult dilemma worse, upcoming new technologies might stea
     font-family: "Proxima Nova", sans-serif;
   }
 
-  /* Remove default styles on wrapper */
   .wrapper, .container, #container, #content, main, body > div {
     background: transparent !important;
     box-shadow: none !important;
     border: none !important;
   }
 
-  /* Article style update to match main page */
   article {
     background-color: rgb(245, 248, 252);
     color: #333;
@@ -302,7 +297,6 @@ To make an already difficult dilemma worse, upcoming new technologies might stea
     margin: 0 auto;
   }
 
-  /* Adjust footer color and styles */
   footer.custom-footer p {
     font-weight: 300;
     font-size: 14px;
